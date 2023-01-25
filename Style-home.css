@@ -1,0 +1,76 @@
+body{/*forma de usar uma fonte especifica para web - font google*/
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #8d4e0b;
+	text-decoration: underline;
+}
+.banner{
+	width: 100%;/*imagem com 100%  da largura da pagina*/
+}
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;/*a medida "em" é a medida padrão de pixels em css, se é dito que o tamanho padrão em pixels do texto é de 15px, quando utilizado "2em" neste caso o titulo ficara 2 vezes o valor padrão de pixels, no caso 30px*/
+	margin: 0 0 1em;/*desta forma o espaçamento para baixo tera 1 vez o valor padrão de pixels, neste caso o espaçamento será de 15px*/
+	clear: left;/*este comando vai limpar um comando abaixo, o float, assim o floar nao vai afetar as configurações da class titulo-principal*/
+}
+.utensilios{
+	width: 120px;
+	float: left;/*comando float faz com que neste caso o texto flutue ao redor do objeto*/
+	margin: 0 20px 0 20px;
+}
+.principal p{
+	margin: 0 0 1em;
+}
+.principal strong{
+	font-weight: bold;
+}
+.principal em{
+	font-style: italic;
+}
+.imagembeneficios{
+	width: 60%;
+}
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}

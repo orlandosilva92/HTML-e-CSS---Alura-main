@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style-contato.css">
+    <title>Contato - Barbearia Alura</title>
+</head>
+<body>
+    <header><!--tag para cabeça do site-->
+        <div class="caixa">
+            <h1><img src="logo.png" alt="Logo marca da Barbearia"></h1>
+            <nav><!--tag para navegação, criação de menu-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main><!--tag para parte principal do site-->
+        <form><!--tag para formulario-->
+            <label for="nome-sobrenome">Nome e Sobrenome:*</label><!--tag para criar um local onde escrever dentro do site, ela é ligada ao input abaixo pelo identificador "id"= nome-sobrenome -->
+            <input type="text" id="nome-sobrenome" class="input-padrão" required placeholder="Nome e sobrenome"><!--tipo de informação que será recebida, input de texto, o termo "required" é utilizado para mostra que aquele input é obrigatório de ser preenchido, o comando "placeholder" é utilizado para adicionar um sujestão de como o input deve ser informado-->
+
+            <label for="email">E-mail:*</label>
+            <input type="email" id="email" class="input-padrão" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone:*</label>
+            <input type="tel" id="telefone" class="input-padrão" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem:*</label>
+            <textarea name="" id="" cols="70" rows="10" id="mensagem"  class="input-padrão" required placeholder="Escreva aqui..."></textarea>
+
+            <fieldset><!--esta tag é responsável por agrupa os dados de um determinado assunto-->
+                <legend>Como prefere o nosso contato?</legend><!--dentro de uma fieldset não há paragrafos e sim "legend"-->
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                
+                <label for="radio-telefone"><input type="radio" name="contato" value="email" id="radio-telefone">Telefone</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="email" id="radio-whatsapp" checked>WhatsApp</label><!--o comando checked faz com que a label whatsapp já carregue marcada-->
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido(a)?</legend>
+                <select> <!--Esta tag serve para criar um select de opções a escolher-->
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" required>Gostaria de receber nossas novidades por e-email?</label>
+
+            <input type="submit" value="Enviar formulário" class="botao-submit"><!--input para criar botão de envio-->
+        </form>
+
+        <table><!--Assim podemos criar uma tabela-->
+            <thead><!--cabeçario de uma tabela-->
+                <tr><!--Linhas-->
+                    <th>Dia</th><!--célula do cabeçario-->
+                    <th>Horário</th><!--célula do cabeçario-->
+                </tr>
+            </thead>
+            <tbody><!--corpo da tabela-->
+                <tr>
+                    <td>Segunda</td>
+                    <td>08:00 as 16:00</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>16:00 as 22:00</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>08:00 as 12:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer><!--tag para rodapé-->
+        <img src="logo-branco.png" alt="logo em branco do site">
+        <p class="copyrigth">&copy; Copyrigth Barbearia Alura - 2023</p><!--o &copy; foi retirado do site unicode, é um conteudo especial - simbolo do tipo código unicode-->
+    </footer>
+</body>
+</html>
