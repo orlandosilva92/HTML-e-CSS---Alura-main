@@ -1,3 +1,103 @@
+<<<<<<< HEAD
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0px;/*espaçamento interno de 20 px para cima e para baixo*/
+}
+.caixa{
+    position: relative;/*adicionando o menu nav para dentro da caixa, assim as guias utilizadas top e rigth serão de acordo com o tamanho da caixa*/
+    width: 940px;/*largura da caixa*/
+    margin: 0 auto;/*topo e baixo / esquerda e direita*/
+}
+nav{
+    position: absolute;/*posicionamento relativo a toda pagina*/   
+    top: 110px; 
+    right: 0px;
+    box-shadow: 10px 10px 20px #000000;
+}
+nav li{
+    display: inline;/*a lista ficara uma do lado da outra*/
+    margin: 0 0 0 15px;/*topo > esquerda > baixo > direita*/
+}
+nav a{
+    text-transform: uppercase;/*tranforma todo o texto em maiusculo, neste caso é o texto dentro das ancoras*/
+    color: #000000;
+    font-weight: bold;/*altera o peso da fonte, tipo negrito*/
+    font-size: 22px;/*tamanho da fonte*/
+    text-decoration: none;/*Retira todo item de decoração, nesse caso o sublinhado*/
+}
+nav a:hover{/*:hover pega o comportamento que acontence sobre um determinado item, nesse caso o item é a ancora contida em na tag nav, nesse caso eu tenho quando o mouse estiver por cima dos links faça....*/
+    color: #906611;/*trocar para esta cor*/
+    text-decoration: underline;/*quando o mouse estiver por cima da ancora, a ancora será sublinhada*/
+    
+}
+.produtos{
+    width: 940px;/*largura da caixa*/
+    margin: 40px auto;/*topo e baixo / esquerda e direita/ isto deixa os produtos centralizados na pagina*/
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produtos li{
+    display: inline-block;/*dessa forma a lista que estava uma embaixo da outra esta uma do lado do outro*/
+    text-align: center;
+    width: 30%;/*com isso cada um ocupara o espaço de 30% de largura da pagina*/
+    vertical-align: top;/*o inline block sempre alinha os itens pela linha de baixo, para mudar isso e alinhar pela linha de cima é usado vertical align "top"*/
+    padding: 30px 20px;/*forma de descolar os produtos do topo e do fundo do site, assim ele ficara com 30px de distancia para cima e para baixo e 20px de distancia para os lados*/
+    border: #000000 solid 2px;/*assim criei uma borda de 2px na cor preta e solida*/
+    border-radius: 25px;/*desta forma a borda tera um arredondamento de 25px*/
+    margin: 0 1.5%;
+    box-sizing: border-box;/*esse comando faz com que os 30% de largura-width seja a largura oficial dos produtos e que os 20px do padding que é esquerda e direita seja dos 30%, ou seja 20px dos 30% de largura*/
+}
+.produtos li:hover{/*:hover pega o comportamento que acontence sobre um determinado item, nesse caso o item é a ancora contida em na tag nav, nesse caso eu tenho quando o mouse estiver por cima dos links faça....*/
+    border-color: #906611;/*trocar para esta cor*/
+}
+.produtos li:hover h2{/*basicamente quando houver um comportamento do mouse em cima do h2 dentro da lista dentro de produtos, acontecera...*/
+    font-size: 34px;/*tamanho da fonte aumentara para 34px*/
+}
+.produtos li:active{/*:active modifica um determinado item quando há a ação de clique, nesse caso o item muda a cor durante o clique*/
+    border-color: #088c19;/*trocar para esta cor*/
+}
+.descricao{
+    font-size: 18px;
+    padding: 30px 20px;/*esse espaçamento faz com que todos os itens tenham a mesma dimensão de 30px para cima e para baixo e 20px para ambos os lados*/
+}
+.preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;/*assim distancia o preço 10px na parte de cima com a descrição*/
+}
+footer{
+    background: url("bg.jpg");/*no lugar de adicionar uma cor, adicionei uma imagem como cor de fundo, e essa imagem ela vai de expandindo por toda area lateral da pagina*/
+    text-align: center;
+    padding: 40px 0px;
+}
+.copyrigth{
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 480px){
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+	}
+	.lista-beneficios, .imagem-beneficios{
+		width: 100%;
+	}
+    .produtos, img, .produtos p{
+        width:100%
+    }
+    .produtos p{
+        padding: 0;
+    }
+=======
 header{
     background-color: #bbbbbb;
     padding: 20px 0px;/*espaçamento interno de 20 px para cima e para baixo*/
@@ -75,4 +175,5 @@ footer{
     color: #ffffff;
     font-size: 13px;
     margin-top: 20px;
+>>>>>>> 9978626328b248ebf56632980f814de43653a9ae
 }
